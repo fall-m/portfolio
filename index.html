@@ -1,26 +1,38 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-	
+	<title>Site de Mohamed Fall</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="accueil.css">
+
 </head>
 <body>
-
-<font color="red" face="verdana" size="10em">
- <u> Sommaire : </u>
-</font>
-
-
-  <ol>
-     <li><h2><a href="page_accueil.html"> Page accueil </a> </h2></li>
-     <li><h2> <a href="page2.html"> Page2 </a> </h2></li>
-     <li><h2> <a href="Liste_article.html"> Liste des articles </a> </h2></li>
-     <li><h2> <a href="identification.html"> Identification </a> </h2></li>
-     <li><h2> <a href="./tp2/tp2_principal.html"> TP2 </a> </h2></li>
-     <li><h2> <a href="./carte_visite.html"> carte de visite </a> </h2></li>
-     <li><h2> <a href="./qcm.html"> qcm </a> </h2></li>
-     <li><h2> <a href="./mission2/page_accueil2.html"> mision 2 </a> </h2></li>
-     <li><h2> <a href="./mission3/qcm.html"> mision 3 </a> </h2></li>
-  </ol>
-
+	<nav>
+		<ul>
+			<li class="deroulant"><a href="#">TP &ensp;</a>
+				<ul class="sous">
+					<li><a href="tp/tp1/page_accueil.html">1 : HTML</a></li>
+					<li><a href="tp/tp2/tp2_principal.html">2 : HTML</a></li>
+					<li><a href="tp/tp4/td_4.html">4 : HTML + CSS</a></li>
+				</ul>
+			</li>
+			<li class="deroulant"><a href="#">Missions &ensp;</a>
+				<ul class="sous">
+					<li><a href="mission/mission2/page_accueil2.html">2</a></li>
+					<li><a href="mission/mission3/qcm.html">3</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+<h1>Bienvenue sur mon site</h1>
+<h2>FALL Mohamed</h2>
+<audio controls preload="metadata" autoplay loop id="son">
+	<source src="fichiers/aruarian.mp3">
+<script>
+	var audio = document.getElementById("son");
+	audio.volume = 0.3;
+</script>
+</audio>
 </body>
 </html>
