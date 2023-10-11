@@ -6,7 +6,8 @@
 }
 
 body {
-  background-image: url(./fichiers/fond.gif)
+  background-image: url(./fichiers/fond.gif);
+  background-size: 100%;
 }
 
 nav{
