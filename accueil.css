@@ -204,3 +204,7 @@ nav input[type=checkbox]:checked ~ ul{
         position: static;
     }
 }
+
+h2{
+    color: white;
+}
