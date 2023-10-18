@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Site de Mohamed Fall</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="accueil.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall Mohamed</title>
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="icon" href="fichiers/db.jpg">
 </head>
 <body>
-	<nav>
-		<ul>
-			<li class="deroulant"><a href="#">TP &ensp;</a>
-				<ul class="sous">
-					<li><a href="tp/tp1/page_accueil.html">1 : HTML</a></li>
-					<li><a href="tp/tp2/tp2_principal.html">2 : HTML</a></li>
-					<li><a href="tp/tp4/td_4.html">4 : HTML + CSS</a></li>
-				</ul>
-			</li>
-			<li class="deroulant"><a href="#">Missions &ensp;</a>
-				<ul class="sous">
-					<li><a href="mission/mission2/page_accueil2.html">2</a></li>
-					<li><a href="mission/mission3/qcm.html">3</a></li>
-					<li><a href="mission/mission4/cv.html">4</a></li>
-				</ul>
-			</li>
-			<li class="deroulant"><a href="#">Certifications &ensp;</a>
-				<ul class="sous">
-					<li><a href="mission/mission5/certificat_1.pdf">Le RGPD et ses notions clés</a></li>
-					<li><a href="mission/mission5/certificat_2.pdf">Les principes de la protection des données</a></li>
-					<li><a href="mission/mission5/certificat_3.pdf">Les responsabilités des acteurs</a></li>
-					<li><a href="mission/mission5/certificat_4.pdf">Le DPO et les outils de la conformité</a></li>
-					<li><a href="mission/mission5/certificat_5.pdf">Les collectivités territoriales</a></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
-<h1>Bienvenue sur mon site</h1>
-<h2>FALL Mohamed</h2>
-<audio controls preload="metadata" autoplay loop id="son">
-	<source src="fichiers/aruarian.mp3">
-<script>
-	var audio = document.getElementById("son");
-	audio.volume = 0.2;
-</script>
-</audio>
+    <body>
+        <nav>
+            <label for="menu-mobile" class="menu-mobile">Menu</label>
+            <input type="checkbox" id="menu-mobile" role="button">
+            <ul>
+                <li class="menu-html"><a href="#">HTML/CSS&ensp;</a>
+                    <ul class="submenu">
+                        <li><a href="tp/tp1/page_accueil.html">1 : HTML</a></li>
+                        <li><a href="tp/tp2/tp2_principal.html">2 : HTML</a></li>
+                        <li><a href="tp/tp4/td_4.html">4 : HTML + CSS</a></li>
+                    </ul>
+                </li>
+                <li class="menu-js"><a href="#">Javascript&ensp;</a>
+                    <ul class="submenu">
+                    </ul>
+                </li>
+                <li class="menu-base"><a href="#">Base de données&ensp;</a>
+                    <ul class="submenu">
+                    </ul>
+                </li><li class="menu-php"><a href="#">PHP&ensp;</a>
+                    <ul class="submenu">
+                    </ul>
+                </li>
+                <li class="menu-missions"><a href="#">Missions&ensp;</a>
+                    <ul class="submenu">
+                        <li><a href="mission/mission2/page_accueil2.html">2</a></li>
+                        <li><a href="mission/mission3/qcm.html">3</a></li>
+                        <li><a href="mission/mission4/cv.html">4</a></li>
+                    </ul>
+                </li>
+                <li class="menu-certif"><a href="#">Certifications&ensp;</a>
+                    <ul class="submenu">
+                        <li><a href="mission/mission5/certificat_1.pdf">Le RGPD et ses notions clés</a></li>
+                        <li><a href="mission/mission5/certificat_2.pdf">Les principes de la protection des données</a></li>
+                        <li><a href="mission/mission5/certificat_3.pdf">Les responsabilités des acteurs</a></li>
+                        <li><a href="mission/mission5/certificat_4.pdf">Le DPO et les outils de la conformité</a></li>
+                        <li><a href="mission/mission5/certificat_5.pdf">Les collectivités territoriales</a></li>
+                    </ul>
+                </li>
+                <li class="menu-contact"><a href="#">Contact&ensp;</a></li>
+            </ul>
+        </nav>
+    <h2>FALL Mohamed</h2>
 </body>
 </html>

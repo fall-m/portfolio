@@ -1,98 +1,206 @@
-/*Style de la page d'accueil*/
-*{
-	margin: 0px;
-	padding: 0px;
-	font-family: Avenir, sans-serif;
-}
-
-body {
-  background-image: url(./fichiers/fond.gif);
-  background-size: 100%;
+body{
+    font-family: Verdana, calibri, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(fichiers/fond.gif);
+    background-size: 100%;
 }
 
 nav{
-	width: 100%;
-	margin: 0 auto;
-	position: sticky;
-	top: 0px;
+    width: 100%;
+    background-color: #424558;
 }
 
-nav ul{
-	list-style-type: none;
+nav li{
+    list-style-type: none;
 }
 
-nav ul li{
-	float: left;
-	width: 25%;
-	text-align: center;
-	position: relative;
-	font-weight: bold;
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
 }
 
-nav ul::after{
-	content: "";
-	display: table;
-	clear: both;
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px ;
+}
+
+nav input[type=chechbox]{
+    display: none;
+}
+
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 nav a{
-	display: block;
-	text-decoration: none;
-	color: white;
-	border-bottom: 2px solid transparent;
-	padding: 10px 0px;
+    display: inline-block;
+    text-decoration: none;
 }
 
-nav a:hover{
-	color: orange;
-	border-bottom: 2px solid gold;
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #FFF;
 }
 
-.sous{
-	display: none;
-	box-shadow: 0px 1px 2px #CCC;
-	position: absolute;
-	width: 100%;
-	z-index: 1000;
-	background-color: black;
+.submenu{
+    display: none;
 }
 
-nav > ul li:hover .sous{
-	display: block;
+.submenu li{
+    border-bottom: 1px solid #CCC;
 }
 
-.sous li{
-	float: none;
-	width: 100%;
-	text-align: center;
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
 }
 
-.sous a{
-	padding: 10px;
-	border-bottom: none;
+.menu-mobile{
+    display: none;
 }
 
-.sous a:hover{
-	border-bottom: none;
-	background-color: rgba(200, 200, 200, 0.1);
+.menu-html:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38, 0.15);
 }
 
-.deroulant > a::after{
-	content:" ▼";
-	font-size: 12px;
+.menu-js:hover{
+    border-top: 5px solid #0070bb;
+    background-color: RGBa(000, 112, 192, 0.15);
 }
 
-h1{
-	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
- 	transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
- 	text-align: center;
- 	color: white;
- 	font-family: Trebuchet MS, sans-serif;
+.menu-base:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBa(241, 211, 79, 0.15);
 }
 
-h2{
-	position:absolute;
-	bottom:0;
-	color: white;
-	font-family: georgia, serif;
+.menu-php:hover{
+    border-top: 5px solid #BBB;
+    background-color: RGBa(220, 220, 220, 0.15);
+}
+
+.menu-missions:hover{
+    border-top: 5px solid #e44d26;
+    background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.menu-certif:hover{
+    border-top: 5px solid #0070bb;
+    background-color: RGBa(000, 112, 192, 0.15);
+}
+
+.menu-contact:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: RGBa(241, 211, 79, 0.15);
+}
+
+.menu-html .submenu{
+    background-color: RGB(230, 100, 40);
+}
+
+.menu-js .submenu{
+    background-color: RGB(000, 160, 240);
+}
+
+.menu-base .submenu{
+    background-color: RGB(251, 216, 99);
+}
+
+.menu-php .submenu{
+    background-color: RGB(230, 100, 40);
+}
+
+.menu-misions .submenu{
+    background-color: RGB(000, 160, 240);
+}
+
+.menu-certif .submenu{
+    background-color: RGB(251, 216, 99);
+}
+
+.menu-contact .submenu{
+    background-color: RGB(230, 100, 40);
+}
+
+.submenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+
+.menu-html .submenu li:hover{
+    background-color: RGB(210, 77, 60);
+}
+
+.menu-js .submenu li:hover{
+    background-color: RGB(000, 115, 200);
+}
+
+.menu-base .submenu li:hover{
+    background-color: RGB(200, 165, 75);
+}
+
+.menu-php .submenu li:hover{
+    background-color: RGB(210, 77, 60);
+}
+
+.menu-missions .submenu li:hover{
+    background-color: RGB(000, 115, 200);
+}
+
+.menu-certif .submenu li:hover{
+    background-color: RGB(200, 165, 75);
+}
+
+.menu-contact .submenu li:hover{
+    background-color: RGB(210, 77, 60);
+}
+
+.menu-mobile{
+    display: none;
+}
+
+nav input[type=checkbox]{
+    display: none;
+}
+
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+@media screen and (max-width : 680px) {
+    .menu-mobile{
+        display: block;
+        color: #FFF;
+        background-color: rgba(29, 197, 151, 0.97);
+        text-align: center;
+        padding: 12px 0;
+    }
+    nav ul{
+        display: none;
+    }
+
+    nav ul li, nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px 10px 0px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
 }
