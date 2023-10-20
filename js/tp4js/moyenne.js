@@ -18,5 +18,7 @@ function moyenne()
         resultat.value = "admis bien";
     else if (m <= 20)
         resultat.value = "admis très bien";
+    else if (m > 20)
+        resultat.value = "erreur";
     
 }
