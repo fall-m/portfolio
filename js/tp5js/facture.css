@@ -1,0 +1,42 @@
+body
+{
+    background-color: green;
+}
+
+button{
+    height: 45px;
+    width: 450px;
+    border-radius: 15px;
+    background-color: lightgray;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+td 
+{
+  border: 1px solid #333;
+  text-align: center;
+  height: 50px;
+  width: 475px;
+  background-color: lightgray;
+  border-radius: 15px;
+}
+
+h1{
+    text-align: center;
+    color: orange;
+}
+
+div{
+    background-color: skyblue;
+}
+
+input{
+    height: 45px;
+    width: 450px;
+    border: none;
+    background-color: lightgray;
+}
