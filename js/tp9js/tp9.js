@@ -88,3 +88,27 @@ function seconnecter3(){
     if(i==3)
     alert("nombre de tentative expiré");
 }
+
+function pageAjout(){
+    window.location.href="ajouter.html";
+}
+
+function bonus(){
+    var testa = ""
+    var total=""
+    var prixTTC = 0
+    do{
+        var article = prompt("votre article");
+        var prix = prompt("quel prix");
+        var quantite = prompt("quel quantité");
+        alert("vos "+article+" vous coûterons"+price*quantite);
+        total = Number(prix)*Number(quantite);
+        prixTTC += total;
+        testa = testa + ("article : "+artcile+"<br> Prix : "+prix+"€"+"<br> Quantité : "+quantite+"<br> Total : "+total+"€"+"<br>")
+        alert("le coût total de vos articles est de "+prixTTC+"€");
+
+        var reponse = prompt("voulez vous acheter d'autres articles ? (oui/non)");
+    }while(reponse != "non");
+    document.write(testa);
+    document.write('Prix TTC : '+prixTTC+"€");
+}
