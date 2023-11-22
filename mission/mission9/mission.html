@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="charger()">
+    <div class="page">
+        <header>
+            <div class="entreprise-info">
+               
+                <h2>Nike London</h2>
+                <p>Leicester Square </p>
+                <p>Numéro de téléphone: 01 71 20 00 25</p>
+                <p>Email: london.nike@gmail.com</p>
+            </div>
+            <div class="facture-info">
+                <h1>Facture</h1>
+                <p>Date: <span id="date_facture">[Date]</span></p>
+                <p>Numéro de Facture: <span id="numero_facture">[Numéro]</span></p>
+            </div>
+        </header>
+
+        <section id="facture-details">
+            <div id="destinataire">
+                <h2>Destinataire</h2>
+                <p>FALL Mohamed</p>
+              <p>Les Ulis</p>
+                <p>Numéro de téléphone: 07 05 06 08 09</p>
+                <p>Email: 03.fall.mohamed@gmail.com</p>
+            </div>
+            <div id="envoie">
+                <h2>Envoyez à</h2>
+                <p>Michael</p>
+                <p>80 Rue de Versailles BP112, 91305 Massy</p>
+                <p>Numéro de téléphone: 0000000000</p>
+                <p>Email:Turbo.0910727w@ac-versailles.fr</p>
+            </div>
+        </section>
+
+        <table id="facture-tableau">
+            <thead>
+                <tr>
+                    <th>Nom de l'article</th>
+                    <th>Quantité</th>
+                    <th>Prix unitaire</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr id="modeleLigne" class="tr">
+                    <td><input type="text" class="nom" value="Article 1"></td>
+                    <td><input type="number" class="quantite" value="2"></td>
+                    <td><input type="number" class="prix" value="00.00"></td>
+                    <td><span class="total">00.00</span></td>
+                </tr>
+                <tr id="lastLigne">
+                    <td><input type="text" class="nom" value="Article 2"></td>
+                    <td><input type="number" class="quantite" value="1"></td>
+                    <td><input type="number" class="prix" value="00.00"></td>
+                    <td><span class="total">00.00</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="totals">
+            <p>Sous-total : <span id="sous_total">0.0</span></p>
+            <p>Remise : <input type="text" value="0.0" id="remise"></p>
+            <p>Sous-total moins remise : <span id="sous_total_remise">0.0</span></p>
+            <p>Taux d'imposition : <input type="text" value="10" id="taxe">%</p>
+            <p>Taxe totale : <span id="taxe_total">0.0</span></p>
+            <p>Expédition manutention : <input type="text" value="0.0" id="expedition"></p>
+            <h3>Solde total : <span id="solde_total">0.0</span></h3>
+        </div>
+
+        <div id="boutons">
+            <button onclick="Calculer()">Calculer</button>
+            <button onclick="ajouterLigne()">Ajouter une ligne</button>
+            <button type="reset">Annuler</button>
+        </div>
+    </div>
+</body>
+</html>
