@@ -53,7 +53,7 @@ function Calculer() {
     var taxe_total = (sous_total * (imposition / 100));
     document.getElementById("taxe_total").innerHTML = taxe_total.toFixed(2);
 
-    var solde_total = sous_total + taxe_total + expedition;
+    var solde_total = sous_total_remise + taxe_total + expedition;
     document.getElementById("solde_total").innerHTML = solde_total.toFixed(2);
 }
 
