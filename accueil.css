@@ -2,7 +2,7 @@ body{
     font-family: Verdana, calibri, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-image: url(fichiers/fond.jpg);
+    background-image: url(fichiers/fond.jpeg);
     background-size: 100%;
 }
 
@@ -123,12 +123,12 @@ nav > ul > li > a{
     background-color: RGB(230, 100, 40);
 }
 
-.menu-misions .submenu{
-    background-color: RGB(000, 160, 240);
+.menu-missions .submenu{
+    background-color: RGB(230, 100, 40);
 }
 
 .menu-certif .submenu{
-    background-color: RGB(251, 216, 99);
+    background-color: RGB(000, 160, 240);
 }
 
 .menu-contact .submenu{
@@ -157,11 +157,11 @@ nav > ul > li > a{
 }
 
 .menu-missions .submenu li:hover{
-    background-color: RGB(000, 115, 200);
+    background-color: RGB(210, 77, 60);
 }
 
 .menu-certif .submenu li:hover{
-    background-color: RGB(200, 165, 75);
+    background-color: RGB(000, 115, 200);
 }
 
 .menu-contact .submenu li:hover{
