@@ -1,0 +1,16 @@
+body{
+    background-color: gray;
+}
+div{
+    display: inline-block;
+}
+
+
+h1{
+    text-align: center;
+}
+button{
+    font-size: 120%;
+    margin: 3px;
+    display: block;
+}
