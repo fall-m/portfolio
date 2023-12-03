@@ -2,8 +2,15 @@ body{
     font-family: Verdana, calibri, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-image: url(fichiers/fond.jpeg);
-    background-size: 100%;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 nav{
