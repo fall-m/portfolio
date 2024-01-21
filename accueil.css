@@ -1,16 +1,8 @@
 body{
-    font-family: Verdana, calibri, sans-serif;
-    margin: 0px;
-    padding: 0px;
-}
+    font-family: Verdana, sans-serif;
 
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-image: url(fichiers/fond.jpg);
+    background-size: cover;
 }
 
 nav{
