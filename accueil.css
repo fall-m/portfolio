@@ -86,11 +86,6 @@ nav > ul > li > a{
     background-color: RGBa(241, 211, 79, 0.15);
 }
 
-.menu-php:hover{
-    border-top: 5px solid #BBB;
-    background-color: RGBa(220, 220, 220, 0.15);
-}
-
 .menu-missions:hover{
     border-top: 5px solid #e44d26;
     background-color: RGBa(228, 77, 38, 0.15);
@@ -116,10 +111,6 @@ nav > ul > li > a{
 
 .menu-base .submenu{
     background-color: RGB(251, 216, 99);
-}
-
-.menu-php .submenu{
-    background-color: RGB(230, 100, 40);
 }
 
 .menu-missions .submenu{
@@ -149,10 +140,6 @@ nav > ul > li > a{
 
 .menu-base .submenu li:hover{
     background-color: RGB(200, 165, 75);
-}
-
-.menu-php .submenu li:hover{
-    background-color: RGB(210, 77, 60);
 }
 
 .menu-missions .submenu li:hover{
